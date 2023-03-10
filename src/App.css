@@ -12,12 +12,12 @@
   }
 }
 header, footer{
-  background-color: #282c34;
+  background-color: #0654f0;
   border-style: solid;
   border-radius: 20px;
   padding: 5px;
   text-align: center;
-  color: #ffffff;
+  color: #080808;
 }
 .social-links{
   display: flex;
@@ -38,13 +38,13 @@ margin: auto;
   .social-items a{
   padding: 10px 20px;
   font-size: 35px;
-  color: #6cccc6;
+  color: #f85a10;
   }
   .outer-footer{
     padding: 10px;
     text-align: center;
     font-size: 18px;
-    color: aliceblue;
+    color: rgb(2, 247, 22);
     }
     .separador1{
       height: 10px;
@@ -54,21 +54,21 @@ margin: auto;
       max-width: 1000px;
       margin: auto;
       padding: 60px;
-      background-color: #272727;
+      background-color: #080808;
       }
 .App-header {
-  background-color: 	#282c34;
+  background-color: 	#042974;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #ffffff;
+  color: #0e0d0d;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #09c0f3;
 }
 
 @keyframes App-logo-spin {
@@ -83,7 +83,7 @@ margin: auto;
 
 }
 form {
-  background-color: #C09F80;
+  background-color: #f84a05;
   border-radius: 20px;
   box-sizing: border-box;
   height: auto;
@@ -91,11 +91,11 @@ form {
   width: auto;
 }
 input {
-  background-color: #763223;
+  background-color: #0731ec;
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
-  color: #eee;
+  color: #070707;
   font-size: 18px;
   height: 100%;
   outline: 0;
@@ -105,18 +105,18 @@ input {
 }
 
 .Contacto {
-  color: #ffffff;
+  color: #07e63f;
   width: auto;
   height: auto;
   padding: 0.3cm;
-  background-color: #15172b;
+  background-color: #0514b1;
   transition-property: color, transform;
   transition: background-color 2s;
   
 }
 
 .Contacto:hover {
-  background-color: #885050;
-  color: #ffffff;
+  background-color: #09a4ec;
+  color: #7e7979;
   transform: scale(1.1);
 }

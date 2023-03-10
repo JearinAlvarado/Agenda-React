@@ -22,11 +22,11 @@ function FormularioDeEnvio(){
 <form>
     <center>Agregar contactos</center>
   <label>
-    Nombre :
+    Nombre:
     <input type="text" id="TxtNombre"/>
-    Apellido :
+    Apellido:
     <input type="text" id="TxtApellido"/>
-    Telefono :
+    Telefono:
     <input type="text" id="TxtTelefono"/>
   </label>
   <input type="submit" onClick={Enviar} />
