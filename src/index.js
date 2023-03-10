@@ -1,58 +1,18 @@
-const apiUrl = 'http://www.raydelto.org/agenda.php';
-let form = document.getElementById('form').addEventListener('submit', sendContact);
-getContacts(apiUrl);
-function sendContact(e){
-    e.preventDefault();
-    
-    let name = document.getElementById('name').value;
-    let lastName = document.getElementById('lastname').value;
-    let telephone = document.getElementById('telephone').value;
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+   document.getElementById('root')
+);
 
-    if(name != '' && lastName != '' && telephone != ''){
-        let data = {
-            nombre: name,
-            apellido: lastName,
-            telefono: telephone
-        };
-        Data(data, apiUrl);
-    } else {
-        alert('Quedan Campos Sin Completar');
-    }
-}
-function getContacts(url){
 
-    fetch(url)
-    .then((contact)=>{
-        return contact.json();
-    })
-    .then((data)=>{
-        let table = document.getElementById('table');
-        data.forEach(e => {
-            let tr = document.createElement('tr');
-            let name = document.createElement('td');
-            let lastName = document.createElement('td');
-            let telephone = document.createElement('td');
-            name.textContent = e.nombre;
-            lastName.textContent = e.apellido;
-            telephone.textContent = e.telefono;
-            tr.appendChild(name);
-            tr.appendChild(lastName);
-            tr.appendChild(telephone);
-            table.appendChild(tr);
-        })
-
-    }).catch((e)=>{
-        alert("Error al cargar contactos")
-    });
-}
-function Data(data, url) {
-    fetch(url, {
-        method: 'POST',
-        body: JSON.stringify(data)
-    }).then((r) => {
-        alert("Contacto agregado exitosamente");
-        location.reload();
-    }).catch((e) => {
-        console.log(`Error: ${e}`);
-    });
-}
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
