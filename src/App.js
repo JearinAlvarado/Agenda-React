@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p className="Titulo">Agenda React ITLA</p>
+        <p className="Titulo">Agenda React </p>
         <Agenda/>
         <div class="outer-footer">
         </div>
@@ -15,5 +15,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
