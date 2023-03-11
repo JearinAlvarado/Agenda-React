@@ -38,16 +38,16 @@ margin: auto;
   .social-items a{
   padding: 10px 20px;
   font-size: 35px;
-  color: #f85a10;
+  color: #f0eeee;
   }
   .outer-footer{
     padding: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     color: rgb(2, 247, 22);
     }
     .separador1{
-      height: 10px;
+      height: 5px;
     }
     .inner-footer{
       width: 100%;
@@ -60,8 +60,8 @@ margin: auto;
   background-color: 	#042974;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: 0;
+  align-items: left;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #0e0d0d;
@@ -84,22 +84,22 @@ margin: auto;
 }
 form {
   background-color: #f84a05;
-  border-radius: 20px;
+  border-radius: 200px;
   box-sizing: border-box;
   height: auto;
-  padding: 20px;
+  padding: 10px;
   width: auto;
 }
 input {
   background-color: #0731ec;
   border-radius: 12px;
-  border: 0;
+  border: 10;
   box-sizing: border-box;
   color: #070707;
-  font-size: 18px;
+  font-size: 20px;
   height: 100%;
   outline: 0;
-  padding: 4px 20px 0;
+  padding: 4px 100px 0;
   width: auto;
   
 }
