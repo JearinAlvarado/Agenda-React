@@ -1,3 +1,3 @@
 Tarea 4, Jearin Francis Alvarado De Aza: Agenda React
 
-![´ímage´](image.png)
+![´ímage´](./src/imgs/image.png)
